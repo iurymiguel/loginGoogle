@@ -1,0 +1,31 @@
+keytool -exportcert -list -v \
+-alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore (comando para pegar o SHA-1)
+
+Nome do alias: androiddebugkey
+Data de criação: 24/04/2018
+Tipo de entrada: PrivateKeyEntry
+Comprimento da cadeia de certificados: 1
+Certificado[1]:
+Proprietário: C=US, O=Android, CN=Android Debug
+Emissor: C=US, O=Android, CN=Android Debug
+Número de série: 1
+Válido de Tue Apr 24 11:19:09 BRT 2018 até Thu Apr 16 11:19:09 BRT 2048
+Fingerprints do certificado:
+         MD5:  17:7A:EB:0B:40:3A:2F:D9:7D:35:2B:05:D2:4A:89:37
+         SHA1: 71:92:38:B6:9A:08:40:E2:FF:35:92:20:EA:FA:6E:6E:FB:C9:06:C6
+         SHA256: 2A:DB:C2:20:49:22:3C:3F:01:6D:5C:47:63:43:46:89:82:50:3E:09:F9:61:B8:86:89:47:81:AC:88:7E:C1:0E
+Nome do algoritmo de assinatura: SHA1withRSA
+Algoritmo de Chave Pública do Assunto: Chave RSA de 1024 bits
+Versão: 1
+
+Warning:
+O armazenamento de chaves JKS usa um formato proprietário.
+ É recomendada a migração para PKCS12, que é um formato de padrão industrial que usa
+ "keytool -importkeystore -srckeystore C:\Users\iuryrocha\.android\debug.keystore -destkeystore C:\Users\iuryrocha\.android\debug.keystore -deststoretype pkcs12".
+
+
+630106676981-q16o5tcf2afe2aerqmn161814bt9rn1v.apps.googleusercontent.com
+630106676981-q16o5tcf2afe2aerqmn161814bt9rn1v.apps.googleusercontent.com
+
+ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID=myreversedclientid
+npm install --save @ionic-native/google-plus
